@@ -1,0 +1,109 @@
+.container {
+    text-align: left;
+}
+
+.container h2 {
+    font-size: 22px;
+    color: #222;
+    font-weight: bold;
+}
+
+.container .cenfa, .tile {
+    color: #0da487;
+    height: 2px;
+	font-size: 20px
+}
+
+.container p, paragrahTitle {
+    font-size: 14px;
+    color: #4a5568;
+}
+
+.container .swiper-container {
+    margin-top: 20px;
+}
+
+.container .swiper-slide {
+	margin-left: 5px;
+	width: 46px;
+}
+
+.container .swiper-slide:last-child {
+    margin-right: 0; /* Sin margen a la derecha para la última tarjeta */
+}
+
+.container .swiper-slide .card {
+    height: 100px;
+    width: 46px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    transition: background-color 0.3s;
+	white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto cortado */
+}
+
+
+.container .swiper-slide .card i {
+    font-size: 20px;
+	text-align: center;		
+}
+
+.container .swiper-slide .card p {
+    color: #222;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.container .swiper-slide .card:hover {
+    background-color: #0da487;
+    background-image: url('../img/patronComida.png');
+}
+
+.container .swiper-slide .card:hover p {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/* Estilos para dispositivos de escritorio (a partir de 768px) */
+@media (min-width: 768px) {
+	.container h2 {
+		font-size: 23px;
+	} 
+	.container .swiper-slide {
+		margin-left: 5px;
+		width: 76px;
+    }
+
+    .container .swiper-slide:last-child {
+        margin-right: 0; /* Sin margen a la derecha para la última tarjeta */
+    }
+
+    .container .swiper-slide .card {
+        height: 111px;
+        width: 76px;
+    }
+}
+/* Estilos para dispositivos de escritorio (a partir de 1960px) */
+@media (min-width: 1960px) {
+	.container h2 {
+		font-size: 23px;
+	} 
+    .container .swiper-slide {
+		margin-left: 5px;
+		width: 190px;
+    }
+    .container .swiper-slide:last-child {
+        margin-right: 0; /* Sin margen a la derecha para la última tarjeta */
+    }
+
+    .container .swiper-slide .card {
+        height: 150px;
+        width: 190px;
+    }
+
+}
